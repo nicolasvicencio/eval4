@@ -19,7 +19,7 @@ function App() {
       <Header />   
         <Routes>
           <Route path='/' element={<Main />} />
-          <Route path='autores' element={<Authors/>}/>
+          <Route path='buscar' element={<Authors/>}/>
           <Route path='listado' element={<List />} />
         </Routes>
 

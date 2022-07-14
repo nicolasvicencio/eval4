@@ -29,7 +29,7 @@ export default () => {
               onChange={(e) => setUserSearch(e.target.value)}
             />
             <Link
-              to={{ pathname: `/autores/?${userSearch}` }}
+              to={{ pathname: `/buscar/?${userSearch}` }}
               onClick={handleClick}
             >
               <BiSearchAlt2
