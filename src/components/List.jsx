@@ -6,7 +6,7 @@ export default () => {
 
   return (
     <div className="mt-5 container">
-      <h2 className="mb-5 mx-2">Listado de autores</h2>
+      <h2 className="mb-4 mx-2">Listado de autores</h2>
       {data.map((el) => (
         <ListItem key={el.id} el={el} />
       ))}
