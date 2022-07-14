@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { useLocation } from "react-router-dom";
-import ListItem from "./ListItem";
 import { BiErrorAlt } from "react-icons/bi";
+
+import ListItem from "./ListItem";
 
 export default () => {
   let location = useLocation();
-  const [empty, setEmpty] = useState(true);
 
   let data = JSON.parse(localStorage.getItem("data"));
   let queryId = location.search.substring(1);
@@ -16,8 +16,10 @@ export default () => {
       {filter.length > 0 ? (
         filter.map((el) => (
           <>
-            <h2 className="mb-4" key={el.id}>Detalle</h2>
-            <ListItem el={el}  />
+            <h2 className="mb-4"  >
+              Detalle
+            </h2>
+            <ListItem el={el} key={el.id} />
           </>
         ))
       ) : (

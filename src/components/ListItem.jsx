@@ -1,6 +1,6 @@
 import React from "react";
 
-export default ({el}) => {
+export default ({ el }) => {
   return (
     <div className="border my-2 p-3" key={el.id}>
       <h3 className="p-1">ID: {el.id}</h3>
