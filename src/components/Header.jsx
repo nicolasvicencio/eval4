@@ -6,6 +6,10 @@ export default () => {
   const navigate = useNavigate();
   const [userSearch, setUserSearch] = useState("");
 
+  const handleClick = () => {
+    if (userSearch === "") return alert("Debe ingresar id");
+  };
+
   return (
     <div className="w-max bg-dark ">
       <div className=" text-center container-fluid">
@@ -16,7 +20,6 @@ export default () => {
           >
             BuscaLibros
           </p>
-
           <div className="col-sm-6">
             <input
               type="text"
@@ -25,7 +28,10 @@ export default () => {
               value={userSearch}
               onChange={(e) => setUserSearch(e.target.value)}
             />
-            <Link to={{ pathname: `/autores/?${userSearch}` }}>
+            <Link
+              to={{ pathname: `/autores/?${userSearch}` }}
+              onClick={handleClick}
+            >
               <BiSearchAlt2
                 className="col-sm-2 pointer mx-0"
                 color="white"
