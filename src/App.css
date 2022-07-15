@@ -45,3 +45,10 @@ button {
   cursor: pointer;
 }
 
+.img-slider{
+  max-height: 30%;
+}
+
+a {
+  list-style: none;
+}

@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { BiSearchAlt2 } from "react-icons/bi";
 import { Link, useNavigate } from "react-router-dom";
+import CarrouselDom from "./Carousel.jsx";
+
 
 export default () => {
   const navigate = useNavigate();
@@ -47,6 +49,7 @@ export default () => {
           </span>
         </div>
       </div>
+      
     </div>
   );
 };
